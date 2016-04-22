@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+   
+  
+       
+   
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header" style="background-color:#80FF00">
+       <a href="home.html" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left" data-transition="slide" data-direction="reverse">left</a>
+    <h1>Search</h1>
+    
+  </div>
+    
+    
+
+  <div data-role="main" class="ui-content">
+      
+       <script>
+                    
+    function load_profile()
+   {
+      // location.reload(true);
+
+       
+       var nic=document.getElementById('nic').value;//get nic 
+       var prsn=document.getElementById('prsn_content');// person details content area
+       //$( "#prsn_content" ).empty();
+      // alert(nic);
+          
+/*
+      
+       $.ajax({
+           
+           url:'server27.000webhost.com',
+           type:'POST',
+           data:'nic='+nic,
+
+           
+           success: function (data, textStatus, jqXHR) {
+             // alert(data);
+       var reviews=jQuery.parseJSON(data);
+                        //alert(reviews);
+                        */
+                        $( "#prsn_content" ).empty();
+                        
+                
+                       var tr1=prsn.insertRow(prsn.rows.length);
+                       var td11=tr1.insertCell(0);
+                       td11.innerHTML="photo";
+                        var td12=tr1.insertCell(1);
+                       td12.innerHTML="<img src='1.jpg' width='100px' height='100px'/>";
+                       
+                        var tr2=prsn.insertRow(prsn.rows.length);                       
+                         var td21=tr2.insertCell(0);
+                       td21.innerHTML="first name";
+                        var td22=tr2.insertCell(1);
+                       td22.innerHTML="dulaj";
+                       
+                       var tr3=prsn.insertRow(prsn.rows.length);                       
+                         var td31=tr3.insertCell(0);
+                       td31.innerHTML="Last Name";
+                        var td32=tr3.insertCell(1);
+                       td32.innerHTML="sanjaya";
+                       
+                       var tr4=prsn.insertRow(prsn.rows.length);                       
+                         var td41=tr4.insertCell(0);
+                       td41.innerHTML="Address";
+                        var td42=tr4.insertCell(1);
+                       //td42.innerHTML=reviews[0].address_line_1+" "+reviews[0].address_line_2+" "+reviews[0].address_line_3;
+                        td42.innerHTML="No ------------"
+                       
+                       
+                       
+                       var tr5=prsn.insertRow(prsn.rows.length);                       
+                         var td51=tr5.insertCell(0);
+                       td51.innerHTML="Blood Group";
+                        var td52=tr5.insertCell(1);
+                       td52.innerHTML="B+";
+                       
+                       var tr6=prsn.insertRow(prsn.rows.length);                       
+                         var td61=tr6.insertCell(0);
+                       td61.innerHTML="B'day";
+                        var td62=tr6.insertCell(1);
+                       td62.innerHTML="1993-05-29";
+                       
+                       var tr7=prsn.insertRow(prsn.rows.length);                       
+                         var td71=tr7.insertCell(0);
+                       td71.innerHTML="Contact No";
+                        var td72=tr7.insertCell(1);
+                       td72.innerHTML="0711203219";
+                       
+                       var tr8=prsn.insertRow(prsn.rows.length);                       
+                         var td81=tr8.insertCell(0);
+                       td81.innerHTML="Email";
+                        var td82=tr8.insertCell(1);
+                       td82.innerHTML="dulaj.san@gmail.com";
+                       
+                       var tr9=prsn.insertRow(prsn.rows.length);                       
+                         var td91=tr9.insertCell(0);
+                       td91.innerHTML="Signature";
+                        var td92=tr9.insertCell(1);
+                       td92.innerHTML="dulaj";
+                       
+                 /*      
+    
+                    },
+                    
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert(textStatus);
+                        
+                    }
+            
+       });
+       */
+       
+       
+   }
+                    
+
+                    
+                </script>
+      
+      
+      
+      
+       <script>
+                    
+                    function load_license()
+                    {
+                        var nic2=document.getElementById('nic').value;
+                        var prsn=document.getElementById('prsn_content');// person details content area
+                        /*
+                        $.ajax({
+                            url:'server27.000webhost.com',
+                            type:'POST',
+                            data:'nic='+nic2,
+                            
+                            success: function (data, textStatus, jqXHR) {
+                                
+                                var lsn=jQuery.parseJSON(data);
+                                
+                        //alert(lsn);
+                        */
+                                $( "#prsn_content" ).empty();
+                
+                       var tr1=prsn.insertRow(prsn.rows.length);
+                       var td11=tr1.insertCell(0);
+                       td11.innerHTML="Issuing authority";
+                        var td12=tr1.insertCell(1);
+                       td12.innerHTML="motor traffic";
+                       
+                       
+                       var tr2=prsn.insertRow(prsn.rows.length);                       
+                         var td21=tr2.insertCell(0);
+                       td21.innerHTML="Issued date";
+                        var td22=tr2.insertCell(1);
+                       td22.innerHTML="2012-03-12";
+                       
+                       var tr3=prsn.insertRow(prsn.rows.length);                       
+                         var td31=tr3.insertCell(0);
+                       td31.innerHTML="Expire date";
+                        var td32=tr3.insertCell(1);
+                       td32.innerHTML="2016-03-12";
+                       
+                        var tr4=prsn.insertRow(prsn.rows.length);                       
+                         var td41=tr4.insertCell(0);
+                       td41.innerHTML="Administrative number";
+                        var td42=tr4.insertCell(1);
+                       td42.innerHTML="98832454665";
+                       
+                       
+                       
+                    
+                       
+                       var tr6=prsn.insertRow(prsn.rows.length);                       
+                         var td61=tr6.insertCell(0);
+                       td61.innerHTML="Merit";
+                        var td62=tr6.insertCell(1);
+                       td62.innerHTML="15";
+                   /*             
+                        
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert("server error");
+                        
+                    }
+                            
+                            
+                            
+                        });
+                        */
+                    }
+                    
+                    
+                </script>
+      
+      <script>
+          
+          function load_points()
+          {
+              var nic3=document.getElementById('nic').value;
+                        var prsn=document.getElementById('prsn_content');// person details content area
+              /*
+                        $.ajax({
+                            url:'server27.000webhost.com',
+                            type:'POST',
+                            data:'nic='+nic3,
+                            
+                            success: function (data, textStatus, jqXHR) {
+                                
+                                var lsn=jQuery.parseJSON(data);
+                                
+                        //alert(lsn);
+                        */
+                                $( "#prsn_content" ).empty();
+                
+                       var tr1=prsn.insertRow(prsn.rows.length);
+                       var td11=tr1.insertCell(0);
+                       td11.innerHTML="Current Points";
+                        var td12=tr1.insertCell(1);
+                       td12.innerHTML=5;
+              /*
+                            },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert("server error");
+                        
+                    }
+                            
+                            
+                            
+                        });
+                        
+                        */
+                    }
+      
+      
+      </script>
+   
+    
+        <form >
+      <input type="search" id="nic" placeholder="ex:931500406V"/>
+            <input type="button" onclick="load_profile()" value="search"/>
+      
+      </form>
+    
+      
+        <table data-role="table"  class="ui-responsive ui-shadow" id="myTable">
+           
+            
+            <tbody id="prsn_content">
+          
+            </tbody>
+      </table>
+            
+            
+  </div>
+
+ <div data-role="footer" data-position="fixed" style="background-color:#80FF00; color:white; text-align:center">
+      <div data-role="navbar">
+      <ul>
+        <li onclick="load_profile()"><a href="#" data-icon="user">person</a></li>
+        <li onclick="load_license()"><a href="#" data-icon="bars">license</a></li>
+        <li onclick="load_points()"><a href="#" data-icon="star">Points</a></li>
+      </ul>
+    </div>
+    <a href="home.html" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="slideup">Search</a>
+  </div>
+</div> 
+</div> 
+
+</body>
+</html>

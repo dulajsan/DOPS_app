@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+    
+    <style>
+    .logo,.pp_btn
+        {
+            text-align: center;
+        }
+        
+        .ui-content h1
+        {
+            font-family:serif;
+        }
+        
+       
+      
+    </style>
+</head>
+<body>
+
+<div data-role="page" data-theme="a" style="background-color:#585858" id="pageone">
+  
+
+  <div data-role="main" class="ui-content" >
+      <h1 style="text-align:center; color:blue; font-size:40px">welcome</h1>  
+      <div data-role="content" class="logo"><img src="img/logo.png" width="110px" height="120px" style="text-align:center"/></div>
+      <h1 style="text-align:center; color:white; font-size:40px"><i>DOPS</i></h1>
+      <p style="text-align:center; color:white">v 1.0.0 </p>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      <form method="post" action="demoform.asp">
+        <div>
+          <h3>Login information</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <a href="home.html" data-transition="slide"><input type="submit" data-inline="true" value="Log in"></a>
+        </div>
+      </form>
+    </div>
+      <div data-role="content" class="pp_btn" ><a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn-b" style="background-color:blue">Login</a></div>
+      
+  </div>
+
+
+</div> 
+
+</body>
+</html>
+
